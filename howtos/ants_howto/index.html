@@ -470,7 +470,16 @@
                 
                 <h1 id="ants-howto">ANTS Howto<a class="headerlink" href="#ants-howto" title="Permanent link">&para;</a></h1>
 <h2 id="apply-forward-transform">Apply forward transform<a class="headerlink" href="#apply-forward-transform" title="Permanent link">&para;</a></h2>
-<p>$ A \rightarrow  B $</p>
+<p>AA&gt; $ A \rightarrow  B $</p>
+<p>and</p>
+<p>$$
+$\require{AMScd}$
+\begin{CD}
+A @&gt;a&gt;&gt; B\
+@V b V V= @VV c V\
+C @&gt;&gt;d&gt; D
+\end{CD}
+$$</p>
 <div class="codehilite"><pre><span></span><code>antsRegistrationSyNQuick.sh -d 3 \
         -f B.nii.gz \
         -m A.nii.gz \
